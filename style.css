@@ -17,13 +17,13 @@ footer {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fdfaf5;
-    color: #333;
+    font-family: "Poppins";
+    background-color: #fff9f1;
+    color: black;
 }
 header {
-    background-color: #6b4f3b;
-    color: white;
+    background-color: white;
+    color:black;
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
@@ -33,15 +33,17 @@ header {
 header h1 {
     margin: 0;
     font-size: 24px;
+    
 }
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     margin-left: 20px;
     font-size: 15px;
 }
 nav a:hover {
-    text-decoration: underline;
+    color: #3f6844;
+    text-decoration: none;
 }
 .hero {
     padding: 40px 30px;
@@ -146,6 +148,62 @@ footer {
     color: #6b4f3b;
     margin-top: 25px;
 }
+
+
+.logo h1 {
+    margin: 0;
+    font-family: "Copper Black", "Arial Black", sans-serif;
+    font-size: 40px;
+    color: black;
+    border-bottom: 3px solid #e8e3dc;
+}
+
+.logo p {
+    margin: 2px 0 0;
+    font-family: "Segoe Script", "Brush Script MT", cursive;
+    font-size: 15px;
+    color: purple ;
+    
+}
+
+.top-bar {
+    background-color:white;
+    display: grid;
+    text-align: center;
+    padding: 5px 20px;
+    height: 40px;
+
+}
+
+.top-bar p {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 5px;
+}
+
+.top-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.top-links a {
+    color: black;
+    font-family: cursive;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+
+.top-links a:hover {
+background-color: white;
+}
+.food-icon {
+font-size: 30px;
+margin-right: middle;
+vertical-align: middle;
+}
+
 @media (max-width: 900px) {
     .recipe-grid {
     grid-template-columns: repeat(2, 1fr);
