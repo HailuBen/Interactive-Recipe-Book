@@ -1,224 +1,424 @@
-/* footer to bottom */
-html, body {
-    height: 100%;
+* {
+    box-sizing: border-box;
 }
+
 body {
+    margin: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #fffaf3;
+    color: #33251d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
+
+
 main {
     flex: 1;
 }
-footer {
-    margin-top: auto;
-}
 
-
-
-body {
-    margin: 0;
-    font-family: "Poppins";
-    background-color: #fff9f1;
-    color: black;
-}
-header {
-    background-color: white;
-    color:black;
-    padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-header h1 {
-    margin: 0;
-    font-size: 24px;
-    
-}
-nav a {
-    color: black;
-    text-decoration: none;
-    margin-left: 20px;
+h3 {
     font-size: 15px;
+    color: #e16512;
 }
-nav a:hover {
-    color: #3f6844;
-    text-decoration: none;
-}
-.hero {
-    padding: 40px 30px;
-    text-align: center;
-    background-color: #f1e6d6;
-}
-.hero h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #6b4f3b;
-}
-.hero p {
-    font-size: 16px;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #555;
-}
-.category-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-.category-links a {
-    background-color: #6b4f3b;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 14px;
-}
-.category-links a:hover {
-    background-color: #543d2e;
-}
-main {
-    padding: 30px;
-}
-.recipe-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-.recipe-card {
-    background-color: white;
-    border: 1px solid #e0d6c8;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-.recipe-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    display: block;
-}
-.recipe-info {
-    padding: 15px;
-}
-.recipe-info h3 {
-    margin: 0 0 8px 0;
-    font-size: 18px;
-    color: #6b4f3b;
-}
-.recipe-info p {
-    font-size: 14px;
-    color: #555;
-    margin: 6px 0;
-}
-.recipe-info .heart {
-    float: right;
-    font-size: 18px;
-    color: #b5423a;
-    cursor: pointer;
-}
-.recipe-info ul, .recipe-info ol {
-    padding-left: 18px;
-    font-size: 13px;
-    color: #555;
-}
-.result-text {
-    font-style: italic;
-    font-size: 13px;
-    color: #7a6f5f;
-}
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #6b4f3b;
-    color: white;
-    font-size: 13px;
-}
-.about-box {
-    max-width: 700px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 25px 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-.about-box h3 {
-    color: #6b4f3b;
-    margin-top: 25px;
+img {
+    max-width: 100%;
 }
 
-
-.logo h1 {
-    margin: 0;
-    font-family: "Copper Black", "Arial Black", sans-serif;
-    font-size: 40px;
-    color: black;
-    border-bottom: 3px solid #e8e3dc;
-}
-
-.logo p {
-    margin: 2px 0 0;
-    font-family: "Segoe Script", "Brush Script MT", cursive;
-    font-size: 15px;
-    color: purple ;
-    
-}
 
 .top-bar {
-    background-color:white;
-    display: grid;
-    text-align: center;
-    padding: 5px 20px;
-    height: 40px;
-
-}
-
-.top-bar p {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 5px;
+    min-height: 65px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #2e211a;
+    border-bottom: 1px solid #eee5dc;
 }
 
 .top-links {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 30px;
+    padding: 0 5px;
+    background-color: #2e211a ;
+   
 }
 
 .top-links a {
-    color: black;
+    padding: 20px 0 10px;
+    color: white;
     font-family: cursive;
-    font-size: 14px;
+    font-size: 15px;
     text-decoration: none;
-    
+    border-bottom: 2px solid transparent;
 }
 
 .top-links a:hover {
-background-color: white;
-}
-.food-icon {
-font-size: 30px;
-margin-right: middle;
-vertical-align: middle;
+    border-bottom: #7a5138;
+    color: #7a5138
 }
 
-@media (max-width: 900px) {
-    .recipe-grid {
-    grid-template-columns: repeat(2, 1fr);
-    }
+
+header {
+    min-width: 300px;
+    padding: 40px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background-color: #ffffff;
+    
 }
-@media (max-width: 600px) {
-    .recipe-grid {
-    grid-template-columns: 1fr;
-    }
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    nav a {
-        margin-left: 0;
-        margin-right: 15px;
-    }
+.logo {
+    flex: 1
+
+}
+
+
+.logo h1 {
+    width: fit-content;
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 52px;
+    border-bottom: 4px solid #e3871e;
+    color:#18100c ;
+
+}
+
+.logo p {
+    margin : 16px 0 0;
+    font-family: "Segoe script", "Brush Script MT", cursive;
+    font-size: 20px;
+    color: #18100c;
+}
+
+.food-icon {
+    margin-right: 10px;
+    font-size: 35px;
+    vertical-align: middle;
+}
+ .header-image {
+    width: 50%;
+    max-width: 750px;
+   
+ }
+
+ .header-image img {
+    width: 100%;
+    height: 345px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    
+ }
+
+ .hero {
+    padding: 65px 25px;
+    background-color: #f2e6d5;
+    text-align: center;
+ }
+
+ .hero-label, .section-label {
+    margin: 0 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #9b6a46;
+ }
+
+ .hero h2 {
+    margin:  0 0 15px;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    color: #67452f ;
+    
+ }
+
+ .hero-description {
+    max-width: 650px;
+    margin: 0 auto;
+    font-family:Georgia, serif ;
+    font-size: 20px;
+    color: #5f564f;
+   
+
+ }
+
+ .explore-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #6b4f3b;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: bold;
+    text-decoration: none;
+    border-radius: 10px;
+
+ }
+
+ .explore-button:hover {
+    background-color: #4f3829;
+ }
+
+ .home-categories {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 75px 30px;
+  text-align: center;
+ }
+
+ .home-categories h2 {
+    margin: 0 0 15px;
+    color: #513828;
+    font-family: Georgia,  serif;
+    font-size: 35px;
+ }
+
+ .section-introduction {
+    margin: 0 0 40px;
+    color: #6d645e;
+    font-size: 15px;
+    
+ }
+
+ .home-category-grid {
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    gap: 25px;
+ }
+
+ .home-category-card {
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #33251d;
+    text-decoration: none;
+    border: 1px solid #eee3d8;
+    border-radius: 15px;
+ }
+
+ .category-icon {
+    height: 190px;
+    display: grid;
+    place-items: center;
+    font: 75px;
+ }
+
+ .category-icon img {
+    height: 200px;
+    width:400px;
+    display: block ;
+    object-fit: cover;
+
+ }
+
+ .breakfast-icon {
+    background-color: #f8e2b9;
+ }
+ .lunch-icon {
+    background-color: #dce9d2;
+ }
+  .dinner-icon {
+    background-color: #ecd5ce;
+  }
+
+  .category-information {
+    padding: 25px;
+  }
+
+  .category-information p {
+    margin: 0;
+    color: #a26f4b;
+    font-size: 15px;
+    font-weight: bold;
+    
+  }
+
+
+  .category-information span {
+    color: #755039;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .favorites-feature {
+    max-width: 1050px;
+    margin: 0 auto 70px;
+    padding: 40px 40px;
+    display: flex;
+    align-items: center;
+    background-color: #f1e5d5;
+    border: 1px solid #e5d4c1;
+    gap: 30px;
+  }
+
+
+  .favorites-heart {
+    color: #b5413b;
+    font-size: 65px;
+  }
+
+  .favorites-message {
+    flex: 1;
+
+
+  }
+
+  .favorites-message h2 {
+    margin: 0 0 15px;
+    color: #543a2a;
+    font-family: Georgia,  serif;
+    font-size: 30px;
+  }
+
+  .favorites-description {
+    max-width: 500px;
+    margin: 0;
+    color:#d96c19;
+  }
+
+  .favorites-button {
+    padding: 15px 20px;
+    background-color: #6b4f3b;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 10px;
+  }
+
+  .favorites-button:hover {
+    background-color: #4f3829;
+  }
+
+  .project-message {
+    padding: 50px 25px;
+    background-color: #f1e5d5;
+    text-align: center;
+    border: 1px solid #efe0d0;
+
+  }
+
+  .project-message h2 {
+    margin: 0 0 15px;
+    color: #4a3b31;
+    font-family: Georgia, serif;
+    font-size: 30px;
+
+  }
+
+  .project-message p {
+    margin: 0 auto 20px;
+    color: #9a5a2d;
+  }
+
+  .project-message a {
+    color: #704b34;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-message a:hover {
+    color: #a25843;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #6b4f3b;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-family: Georgia,  serif;
+    font-size: 15px;
+}
+
+.recipe-grid {
+   
+    margin: 0 auto;
+    padding: 50px 30px;
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    gap: 25px;
+}
+
+.recipe-card {
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #e6d9cb;
+    border-radius: 10px;
+
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 120px;
+    display: block;
+    object-fit: cover;
+
+}
+
+.recipe-info {
+    padding: 20px;
+}
+
+.recipe-info h3 {
+    margin: 0 0 10px;
+    color: #6b4f3b;
+    font-family: Georgia,  serif;
+    font-size: 20px;
+}
+
+.recipe-info p {
+    margin: 10px 0 ;
+    color: #5f5751 ;
+    font-size: 15px;
+
+}
+
+.recipe-info ul, .recipe-info ol {
+    padding-left: 20px;
+    color: #5f5751;
+    font-size: 15px;
+}
+
+.heart {
+    float: right;
+    color: #b5243a;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.result-text {
+    color:#7b6e63;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.about-box {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eadfd4;
+    border-radius: 15px;
+}
+.about-box h2 {
+    color: #6b4f3b;
+    font-family: Georgia,  serif;
+}
+
+.about-box h3 {
+    margin-top: 25px;
+    color: #6b4f3b;
+    font-family: Georgia,  Times, serif;
 }

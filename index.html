@@ -1,50 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Cookbook</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cookbook</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="top-bar">
-    
+    <div class="top-bar">
+        <nav class="top-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="lunch.html">Lunch</a>
+            <a href="dinner.html">Dinner</a>
+            <a href="favorites.html">Favorites</a>
 
-    <div class="top-links">
-
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="breakfast.html">Breakfast</a>
-    <a href="lunch.html">Lunch</a>
-    <a href="dinner.html">Dinner</a>
-    <a href="favorites.html">Favorites</a>
-    </nav>
-
+        </nav>
+            
     </div>
-    </div>
+
 <header>
     <div class="logo">
-    <h1>The Cookbook</h1>
-    <p><span class="food-icon">&#127869;&#65039;</span>
-  Made With Love, Shared With You </p>
+        <h1>The CookBook</h1>
+        <p><span class="food-icon">&#127869;&#65039;</span>Made With Love, Shared With You </p>
     </div>
 
-   
+    <div class="header-image">
+
+        <img src="images/images.jpg"   alt="Fresh ingredients for cooking">
+
+    </div>
 </header>
 <section class="hero">
-    <h2>Find, save, and cook your favorite recipes</h2>
-    <p>Browse recipes by breakfast, lunch, and dinner. Pick a category below to get started.</p>
-    <div class="category-links">
-        <a href="breakfast.html">Breakfast</a>
-        <a href="lunch.html">Lunch</a>
-        <a href="dinner.html">Dinner</a>
-       <a href="favorites.html">Favorites</a>
-    </div>
+    <p class="hero-label">WELCOME TO OUR COOKBOOK</p>
+    <h2>Find, Save & Cook Your Favorite Recipes here </h2>
+    <p class="hero-description">Explore Simple and Delicious Receipes for Breakfast, Lunch and Dinner</p>
+    <a href="#recipe-categories" class="explore-button">Explore Recipes</a>
+
 </section>
 <main>
-    <p style="text-align:center; color:#777;">This site is a project for our Javascript class, made by Group 2.</p>
+    <section class="home-categories" id="recipe-categories">
+        <p class="section-label">OUR RECIPE COLLECTION</p>
+        <h2>What would you like to cook?</h2>
+        <p class="section-introduction">Choose a category and discover your next favorite meal.</p>
+
+        <div class="home-category-grid">
+            <a href="breakfast.html" class="home-category-card">
+                <div class="category-icon breakfast-icon"><img src="images/breakfast-photo.webp" alt="Breakfast Recipes"></div>
+                
+                <div class="category-information">
+                    <p>Good Morning</p>
+                    <h3>Breakfast</h3>
+                    <span>View recipes &rarr;</span>
+                </div>
+            
+            </a>
+
+            <a href="lunch.html" class="home-category-card">
+                <div class="category-icon lunch-icon"><img src="images/lunch-photo.jpg" alt="Lunch Recipes"></div>
+                
+                <div class="category-information">
+                    <p>Midday Favorites</p>
+                    <h3>Lunch</h3>
+                    <span>View recipes &rarr;</span>
+                </div>
+
+                </a>
+
+                <a href="dinner.html" class="home-category-card">
+                <div class="category-icon dinner-icon"><img src="images/dinner-photo.jpg" alt="Dinner Recipes"></div>
+                
+                <div class="category-information">
+                    <p>Made for Sharing</p>
+                    <h3>Dinner</h3>
+                    <span>View recipes &rarr;</span>
+                
+                </div>
+            </a>           
+           
+                
+    </div>
+
+    </section>
+
+
+    <section class="favorites-feature">
+        <div class="favorites-heart"> &hearts;</div>
+        
+        
+        <div class="favorites-message">
+            <p class="section-label">YOUR PERSONAL COLLECTION</p>
+        <h2>Save the recipes you love</h2>
+
+        <p class="favorites-description"> Click on the heart to save your Favorites.</p>
+
+     </div>
+
+     <a href="favorites.html" class="favorites-button">View Favorites</a>
+    </section>
+
+
+<section class="project-message">
+   <h3> 
+    This Cookbook is a Collection of Recipes Brought Together by Group 2 for our Javascript Class Project
+</h3>  
+    <a href="about.html">Meet Our Team &rarr;</a>
+</section>
 </main>
-<footer>Group 2 &mdash; Interactive Recipe Book</footer>
+
+<footer>
+    <p>Group 2 &mdash; Interactive Recipe Book</p>
+</footer>
+
+
+
+
+
 </body>
 </html>
