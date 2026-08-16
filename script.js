@@ -1,6 +1,3 @@
-// Handles: favoriting recipes (saved in localStorage), search/filter by
-// name or ingredient, and dynamically rendering the favorites page.
- 
 document.addEventListener('DOMContentLoaded', () => {
     initFavoriteButtons();
     initSearch();
@@ -16,8 +13,6 @@ function getFavorites() {
 function saveFavorites(favorites) {
     localStorage.setItem('favoriteRecipes', JSON.stringify(favorites));
 }
-
-// turn string into url friendly lowercase hyphenated version safe for web addresses
 function slugify(text) {
     return text.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
 }
@@ -26,7 +21,6 @@ function isFavorited(id) {
     return getFavorites().some(r => r.id === id);
 }
 
-// ---------- Favoriting (works on category pages) ----------
 function initFavoriteButtons() {
     document.querySelectorAll('.recipe-card').forEach(card => {
         const heart = card.querySelector('.heart');
@@ -69,7 +63,6 @@ function updateHeartDisplay(heartEl, saved) {
     heartEl.classList.toggle('active', saved);
 }
 
-// ---------- Search (works on category pages with a #recipe-search input) ----------
 function initSearch() {
     const input = document.getElementById('recipe-search');
     if (!input) return;
@@ -83,7 +76,6 @@ function initSearch() {
     });
 }
 
-// ---------- Favorites page rendering ----------
 function renderFavorites() {
     const container = document.getElementById('favorites-container');
     if (!container) return;
