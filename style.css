@@ -45,6 +45,9 @@ nav a:hover {
     margin: 0 auto;
     color: #555;
 }
+
+
+
 .category-links {
     display: flex;
     justify-content: center;
@@ -85,6 +88,7 @@ main {
     object-fit: cover;
     display: block;
 }
+
 .recipe-info {
     padding: 15px;
 }
@@ -114,8 +118,18 @@ main {
     font-size: 13px;
     color: #7a6f5f;
 }
+.search-bar {
+    margin-top: 15px;
+}
+#recipe-search {
+    width: 200px;
+    max-width: 90%;
+    padding: 5px 10px;
+    border:1px solid #6b4f3b; 
+}
 footer {
   margin-top: auto;
+
     text-align: center;
     padding: 20px;
     background-color: #6b4f3b;
