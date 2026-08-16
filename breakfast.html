@@ -6,7 +6,7 @@
 <title>Breakfast Recipes - The Cookbook</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-category="breakfast">
 <header>
     <h1>The Cookbook</h1>
     <nav>
@@ -21,6 +21,9 @@
 <section class="hero">
     <h2>Breakfast Recipes</h2>
     <p>Simple recipes to start your morning right.</p>
+    <div class="search-bar">
+        <input type="text" id="recipe-search" placeholder="Search by name or ingredient...">
+    </div>
 </section>
 <main>
 <div class="recipe-grid">
@@ -102,5 +105,6 @@
 </div>
 </main>
 <footer>Group 2 &mdash; Interactive Recipe Book</footer>
+<script src="script.js"></script>
 </body>
 </html>
