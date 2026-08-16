@@ -2,6 +2,9 @@
 
 A simple web app to search, filter, and save your favourite recipes. Built with HTML, CSS, and JavaScript.
 
+## Demonstration: 
+[Watch the feature demo](assets/demo.mp4)
+
 ## Features
 - Search recipes by name or ingredient
 - Filter by category (breakfast, lunch, dinner, dessert, etc.)
