@@ -17,6 +17,7 @@ function saveFavorites(favorites) {
     localStorage.setItem('favoriteRecipes', JSON.stringify(favorites));
 }
 
+// turn string into url friendly lowercase hyphenated version safe for web addresses
 function slugify(text) {
     return text.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
 }
