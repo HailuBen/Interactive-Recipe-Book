@@ -127,6 +127,16 @@ main {
     padding: 5px 10px;
     border:1px solid #6b4f3b; 
 }
+
+#recipe-search {
+    width: 200px;
+    margin-top: 15px;
+    padding: 8px 10px;
+}
+
+#favorites-container {
+    text-align: center;
+}
 footer {
   margin-top: auto;
 
