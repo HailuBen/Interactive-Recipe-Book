@@ -85,7 +85,7 @@ function initSearch() {
         const query = input.value.trim().toLowerCase();
         document.querySelectorAll('.recipe-card').forEach(card => {
             const text = card.textContent.toLowerCase();
-            card.style.display = text.includes(query) ? '' : 'none';
+            card.style.display = text.includes(query) ? '' : 'none';    // show match, hide non-match
         });
     });
 }
