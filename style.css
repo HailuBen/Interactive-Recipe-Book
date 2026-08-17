@@ -114,6 +114,21 @@ main {
     font-size: 13px;
     color: #7a6f5f;
 }
+.search-bar {
+    margin-top: 15px;
+}
+#recipe-search {
+    width: 200px;
+    max-width: 90%;
+    padding: 5px 10px;
+    border:1px solid #6b4f3b; 
+}
+
+
+
+#favorites-container {
+    text-align: center;
+}
 footer {
     margin-top: auto;
     text-align: center;
