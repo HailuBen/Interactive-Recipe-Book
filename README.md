@@ -5,6 +5,8 @@
 
 A simple web app to search, filter, and save your favourite recipes. Built with HTML, CSS, and JavaScript.
 
+[Try the site here](https://hailuben.github.io/Interactive-Recipe-Book/)
+
 ## Presentation
 Watch the project's presentation from the developers:
 
